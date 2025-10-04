@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#072A60">
+  <title>Space Biology Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  
+  <button id="sidebarToggle" class="sidebar-toggle" aria-expanded="false" aria-label="Open filters">☰</button>
+  <aside id="sidebar" class="sidebar" aria-hidden="true">
+    <button id="sidebarClose" class="sidebar-close" aria-label="Close filters">×</button>
+    <div class="sidebar-inner">
+      <h3>Categories</h3>
+      <ul id="categoryList" class="category-list"></ul>
+    </div>
+  </aside>
+  <div id="sidebarOverlay" class="sidebar-overlay" hidden></div>
+  <header>
+    <div class="header-inner">
+      <h1>Space Biology Dashboard</h1>
+      <p class="subtitle">Curated research in space biology — filter, search and explore.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="filters">
+    <div class="search-control">
+      <button id="shortcutToggle" class="shortcut-toggle" title="Toggle '/' quick-focus" aria-pressed="true">/</button>
+      <div class="search-wrap">
+        <input 
+          type="text" 
+          id="searchBox" 
+          placeholder="Search by title, summary or keyword..." 
+          aria-label="Search papers"
+        />
+        <select id="yearFilter" aria-label="Filter by year">
+          <option value="all">All Years</option>
+        </select>
+        <span id="shortcutHint" class="hint-badge" aria-hidden="true">/</span>
+        <div id="shortcutTooltip" class="shortcut-tooltip" role="tooltip">Press '/' to focus search</div>
+      </div>
+    </div>
+
+    <div class="controls-hint">Tip: try keywords like "microgravity", "gene expression" or a year.</div>
+    </div>
+
+    <div id="cards-container" class="cards-grid" aria-live="polite"></div>
+  </main>
+
+  <div id="sr-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <footer>
+    <p>NASA Space Apps Challenge – Team Stellar Aria</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
