@@ -4,6 +4,45 @@ const yearFilter = document.getElementById("yearFilter");
 
 let papers = [];
 let selectedCategory = null;
+const FILTERS_KEY = 'nasa_dashboard_last_filters';
+const PAGE_SIZE = 12; // items per page for incremental loading
+let currentFiltered = [];
+let displayedCount = 0;
+let isLoading = false;
+
+// simple throttle utility to limit how often a function runs
+function throttle(fn, wait) {
+  let last = 0;
+  let timeout = null;
+  return function(...args) {
+    const now = Date.now();
+    const remaining = wait - (now - last);
+    if (remaining <= 0) {
+      if (timeout) { clearTimeout(timeout); timeout = null; }
+      last = now;
+      fn.apply(this, args);
+    } else if (!timeout) {
+      timeout = setTimeout(() => {
+        last = Date.now();
+        timeout = null;
+        fn.apply(this, args);
+      }, remaining);
+    }
+  };
+}
+
+// If the first page doesn't fill the viewport, load more until it does (small helper)
+function fillViewportIfNeeded(attempts = 0) {
+  // avoid infinite loops; limit attempts
+  if (attempts > 6) return;
+  // if there's more to load and the page height is shorter than viewport, load more
+  const bodyH = document.body.scrollHeight;
+  if (displayedCount < currentFiltered.length && bodyH <= window.innerHeight) {
+    loadMore();
+    // wait a tick for DOM to update then check again
+    setTimeout(() => fillViewportIfNeeded(attempts + 1), 150);
+  }
+}
 
 fetch('papers.json')
   .then(res => {
@@ -14,7 +53,34 @@ fetch('papers.json')
     papers = data;
     populateYearFilter();
     populateCategories();
-    renderCards(papers);
+    // restore saved filters (if any) and apply; otherwise render all
+    const saved = loadSavedFilters();
+    if (saved) {
+      // restore search
+      if (typeof saved.q === 'string') searchBox.value = saved.q;
+      // restore year only if option exists
+      if (saved.year) {
+        const opt = Array.from(yearFilter.options).find(o => o.value === saved.year);
+        if (opt) yearFilter.value = saved.year;
+      }
+      // restore category (only if it still exists in the populated list)
+      selectedCategory = saved.category || null;
+      if (selectedCategory) {
+        const catItems = Array.from(document.querySelectorAll('#categoryList .category-item'));
+        const found = catItems.some(it => (it.dataset.cat || '').toLowerCase() === selectedCategory.toLowerCase());
+        if (!found) selectedCategory = null; // stale category — clear it
+      }
+      updateCategoryUI();
+      applyFilters();
+    } else {
+      // initialize pagination state and render first page
+      currentFiltered = papers;
+      displayedCount = Math.min(PAGE_SIZE, currentFiltered.length);
+      const firstSlice = currentFiltered.slice(0, displayedCount);
+      renderCards(firstSlice, false);
+      // ensure viewport is reasonably filled on initial load (faster)
+      setTimeout(() => fillViewportIfNeeded(), 80);
+    }
   })
   .catch(err => {
     console.error("Failed to load data:", err);
@@ -24,47 +90,51 @@ fetch('papers.json')
     `;
   });
 
-function renderCards(items) {
-  container.innerHTML = "";
+function renderCards(items, append = false) {
+  if (!append) {
+    container.innerHTML = "";
+  }
   if (!Array.isArray(items) || items.length === 0) {
-    container.innerHTML = "<p>No results found.</p>";
+    if (!append) container.innerHTML = "<p>No results found.</p>";
+    document.getElementById('resultsInfo').textContent = '';
+    document.getElementById('loadMoreBtn').style.display = 'none';
     return;
   }
 
-  // Render cards and add a staggered animation
+  // render each item (supports appending)
   items.forEach((p, i) => {
     const card = document.createElement("div");
     card.className = "card";
 
-  // Use raw text for truncation and perform HTML escaping once
-  const rawTitle = p.title || 'Untitled';
-  const rawAuthors = p.authors || 'Unknown';
-  const year = p.year || '—';
-  const rawOrganism = p.organism || '—';
-  const rawSummary = p.summary || 'No summary available.';
-  const link = p.link ? p.link : '#';
+    // Use raw text for truncation and perform HTML escaping once
+    const rawTitle = p.title || 'Untitled';
+    const rawAuthors = p.authors || 'Unknown';
+    const year = p.year || '—';
+    const rawOrganism = p.organism || '—';
+    const rawSummary = p.summary || 'No summary available.';
+    const link = p.link ? p.link : '#';
 
-  const authors = escapeHtml(rawAuthors);
-  const titleEscaped = escapeHtml(rawTitle);
-  const organism = escapeHtml(rawOrganism);
-  const summaryEscaped = escapeHtml(rawSummary);
+    const authors = escapeHtml(rawAuthors);
+    const titleEscaped = escapeHtml(rawTitle);
+    const organism = escapeHtml(rawOrganism);
+    const summaryEscaped = escapeHtml(rawSummary);
 
-  // Highlight search terms (work on escaped HTML so <span> is inserted safely)
-  const q = searchBox.value.trim();
-  const titleHtml = q ? highlight(titleEscaped, q) : titleEscaped;
-  const summaryHtml = q ? highlight(summaryEscaped, q) : summaryEscaped;
+    // Highlight search terms (work on escaped HTML so <span> is inserted safely)
+    const q = searchBox.value.trim();
+    const titleHtml = q ? highlight(titleEscaped, q) : titleEscaped;
+    const summaryHtml = q ? highlight(summaryEscaped, q) : summaryEscaped;
 
-  // Truncate raw summary to ~220 chars for brief view at a word boundary, then escape
-  const MAX_BRIEF = 130;
-  let brief;
-  if (rawSummary.length > MAX_BRIEF) {
-    const truncated = truncatePreferSentence(rawSummary, MAX_BRIEF);
-    brief = escapeHtml(truncated) + '...';
-  } else {
-    brief = summaryEscaped;
-  }
+    // Truncate raw summary to ~220 chars for brief view at a word boundary, then escape
+    const MAX_BRIEF = 130;
+    let brief;
+    if (rawSummary.length > MAX_BRIEF) {
+      const truncated = truncatePreferSentence(rawSummary, MAX_BRIEF);
+      brief = escapeHtml(truncated) + '...';
+    } else {
+      brief = summaryEscaped;
+    }
 
-  const hasLink = p.link && p.link.trim() !== '' && p.link !== '#';
+    const hasLink = p.link && p.link.trim() !== '' && p.link !== '#';
 
     card.innerHTML = `
       <h2>${titleHtml}</h2>
@@ -78,19 +148,63 @@ function renderCards(items) {
     `;
 
     container.appendChild(card);
-
-    // staggered visible class for entrance
-    setTimeout(() => card.classList.add('visible'), 70 * i);
+    // staggered visible class for entrance — faster timings for snappier UX
+    const baseDelay = append ? 18 : 35; // ms per item
+    setTimeout(() => card.classList.add('visible'), baseDelay * (append ? (displayedCount + i) : i));
   });
+
+  // update results info (Load more button removed in favor of infinite scroll)
+  const info = document.getElementById('resultsInfo');
+  info.textContent = `Showing ${Math.min(displayedCount, currentFiltered.length)} of ${currentFiltered.length} results`;
+  // keep legacy button hidden if present
+  const loadMoreBtn = document.getElementById('loadMoreBtn');
+  if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+}
+
+function loadMore() {
+  if (isLoading) return;
+  if (displayedCount >= currentFiltered.length) return;
+  isLoading = true;
+  const remaining = currentFiltered.slice(displayedCount, displayedCount + PAGE_SIZE);
+  displayedCount += remaining.length;
+  renderCards(remaining, true);
+  // small delay to allow rendering/animations, then clear loading flag
+  setTimeout(() => { isLoading = false; }, 60);
 }
 
 function populateYearFilter() {
   if (!Array.isArray(papers)) return;
-  const years = [...new Set(papers.map(p => p.year).filter(Boolean))].sort((a,b)=>b-a);
+  // Build a set of normalized year strings to avoid duplicates from mixed types
+  const yearsSet = new Set();
+  papers.forEach(p => {
+    if (p == null) return;
+    const y = p.year;
+    if (y === undefined || y === null) return;
+    const ys = String(y).trim();
+    if (ys) yearsSet.add(ys);
+  });
+
+  // Convert to array and sort numerically (desc). Non-numeric values come last.
+  const years = Array.from(yearsSet).sort((a, b) => {
+    const na = Number(a);
+    const nb = Number(b);
+    const aIsNum = !Number.isNaN(na);
+    const bIsNum = !Number.isNaN(nb);
+    if (aIsNum && bIsNum) return nb - na;
+    if (aIsNum) return -1;
+    if (bIsNum) return 1;
+    return a.localeCompare(b);
+  });
+
+  // Remove any existing year options (preserve the first 'All Years' option)
+  while (yearFilter.options.length > 1) {
+    yearFilter.remove(1);
+  }
+
   years.forEach(y => {
     const opt = document.createElement("option");
-    opt.value = y.toString();
-    opt.textContent = y.toString();
+    opt.value = y;
+    opt.textContent = y;
     yearFilter.appendChild(opt);
   });
 }
@@ -122,7 +236,23 @@ function applyFilters() {
     });
   }
 
-  renderCards(filtered);
+  // Setup pagination state for filtered results
+  currentFiltered = filtered;
+  // reset displayed count and render first page
+  if (currentFiltered.length === 0) {
+    displayedCount = 0;
+    renderCards([]);
+    // no need to fill viewport
+  } else {
+    const firstSlice = currentFiltered.slice(0, PAGE_SIZE);
+    displayedCount = firstSlice.length;
+    renderCards(firstSlice, false);
+    // try to ensure viewport is filled after rendering first slice (faster)
+    setTimeout(() => fillViewportIfNeeded(), 80);
+  }
+
+  // persist current filter state
+  saveFilters({ q: searchBox.value.trim(), year: selYear, category: selectedCategory });
 }
 
 // ------------------ Sidebar / Categories ------------------
@@ -198,6 +328,13 @@ function openSidebar() {
   const t = document.getElementById('sidebarToggle');
   if (s) s.classList.add('open');
   if (o) { o.hidden = false; o.style.display = 'block'; }
+  // lock background scroll for bottom-sheet style on small screens
+  document.body.style.overflow = 'hidden';
+  // move focus into sidebar for accessibility
+  if (s) {
+    const firstFocusable = s.querySelector('button, [href], input, select, textarea');
+    if (firstFocusable) firstFocusable.focus();
+  }
   if (t) t.setAttribute('aria-expanded', 'true');
   if (s) s.setAttribute('aria-hidden', 'false');
 }
@@ -208,6 +345,11 @@ function closeSidebar() {
   const t = document.getElementById('sidebarToggle');
   if (s) s.classList.remove('open');
   if (o) { o.hidden = true; o.style.display = 'none'; }
+  // restore scrolling
+  document.body.style.overflow = '';
+  // return focus to toggle
+  const toggle = document.getElementById('sidebarToggle');
+  if (toggle) toggle.focus();
   if (t) t.setAttribute('aria-expanded', 'false');
   if (s) s.setAttribute('aria-hidden', 'true');
 }
@@ -219,6 +361,46 @@ document.addEventListener('DOMContentLoaded', () => {
   if (toggle) toggle.addEventListener('click', openSidebar);
   if (close) close.addEventListener('click', closeSidebar);
   if (overlay) overlay.addEventListener('click', closeSidebar);
+  // wire clear filters button
+  const clearBtn = document.getElementById('clearFilters');
+  if (clearBtn) clearBtn.addEventListener('click', () => {
+    searchBox.value = '';
+    yearFilter.value = 'all';
+    selectedCategory = null;
+    updateCategoryUI();
+    applyFilters();
+    searchBox.focus();
+  });
+  // wire load more button
+  const loadMoreBtn = document.getElementById('loadMoreBtn');
+  // load more is now handled via infinite scroll; hide legacy button if present
+  if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+
+  // infinite scroll: when user scrolls near the bottom, load more items (throttled)
+  const onScrollNearBottom = throttle(() => {
+    const scrollPos = window.scrollY + window.innerHeight;
+    const trigger = document.body.scrollHeight - 300; // 300px from bottom
+    if (scrollPos >= trigger) {
+      loadMore();
+    }
+  }, 200);
+
+  window.addEventListener('scroll', onScrollNearBottom, { passive: true });
+  // also try to load more if the window is resized larger/smaller
+  window.addEventListener('resize', throttle(() => {
+    // attempt to fill viewport if necessary
+    fillViewportIfNeeded();
+  }, 250));
+});
+
+// Close sidebar with Escape when open
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' || e.key === 'Esc') {
+    const s = document.getElementById('sidebar');
+    if (s && s.classList.contains('open')) {
+      closeSidebar();
+    }
+  }
 });
 
 // ربط الأحداث
@@ -260,6 +442,25 @@ function escapeHtml(str){
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
+}
+
+// Persist filters to localStorage
+function saveFilters(obj){
+  try{
+    localStorage.setItem(FILTERS_KEY, JSON.stringify(obj));
+  }catch(e){
+    // ignore storage errors
+  }
+}
+
+function loadSavedFilters(){
+  try{
+    const raw = localStorage.getItem(FILTERS_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  }catch(e){
+    return null;
+  }
 }
 
 function highlight(text, q){

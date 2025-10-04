@@ -166,7 +166,21 @@ select#yearFilter option{
 .sidebar-overlay{position:fixed;inset:0;background:rgba(2,4,8,0.5);z-index:85}
 
 @media (max-width:700px){
-  .sidebar{width:100%;}
+  /* transform the left drawer into a bottom sheet for small screens */
+  .sidebar{
+    width:calc(100% - 28px);
+    left:50%;
+    top:auto;
+    bottom:0;
+    height:60vh;
+    max-height:86vh;
+    transform:translate(-50%,110%);
+    border-radius:12px 12px 0 0;
+    padding:16px 16px 22px;
+    box-shadow: 0 -18px 40px rgba(2,6,23,0.72);
+    transition:transform .32s cubic-bezier(.2,.9,.3,1);
+  }
+  .sidebar.open{transform:translate(-50%,0)}
   .sidebar-toggle{left:12px}
 }
 
@@ -221,3 +235,56 @@ footer{max-width:1100px;margin:24px auto 40px;padding:12px 16px;text-align:cente
   .filters{gap:8px}
   .shortcut-tooltip{right:12px;top:100%;transform:none}
 }
+
+/* Responsive improvements: make grid and controls adapt across devices */
+@media (min-width:601px) and (max-width:1000px){
+  /* medium tablets / small laptops */
+  .header-inner{padding:0 12px}
+  main{padding:0 20px}
+  .search-wrap{max-width:900px}
+  .cards-grid{gap:18px}
+  .card{padding:18px}
+}
+
+@media (max-width:700px){
+  /* make sidebar full width on small devices and ensure visible controls */
+  .sidebar{width:100%;}
+  .sidebar-close{right:18px}
+  .card{padding:16px}
+}
+
+/* Use auto-fit grid with a sensible min width so cards flow naturally */
+.cards-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap:22px;
+  margin-top:22px;
+  padding-bottom:48px;
+}
+
+/* Make search controls wrap on narrow widths for better touch layout */
+.search-control{flex-direction:row;align-items:center}
+.search-wrap{display:flex;flex-wrap:wrap;gap:8px}
+#searchBox{min-width:140px}
+#yearFilter{flex:0 0 auto;min-width:120px}
+
+/* Increase tappable areas on small screens */
+@media (max-width:480px){
+  .btn, .shortcut-toggle, .category-item{padding:12px 14px}
+  header{padding:20px 14px}
+  header h1{font-size:18px}
+  .card h2{font-size:16px}
+  .card p, .card .meta{font-size:14px}
+  .controls-hint{font-size:13px}
+}
+
+/* Slightly scale typography on very large screens */
+@media (min-width:1400px){
+  body{font-size:17px}
+  .header-inner{max-width:1300px}
+  main{max-width:1300px}
+}
+
+/* Ensure sidebar overlay uses visible style only when needed */
+.sidebar-overlay{display:none}
+.sidebar.open + .sidebar-overlay{display:block}

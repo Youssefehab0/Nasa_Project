@@ -43,6 +43,7 @@
         <select id="yearFilter" aria-label="Filter by year">
           <option value="all">All Years</option>
         </select>
+        <button id="clearFilters" class="btn btn-ghost" type="button" title="Clear filters">Clear</button>
         <span id="shortcutHint" class="hint-badge" aria-hidden="true">/</span>
         <div id="shortcutTooltip" class="shortcut-tooltip" role="tooltip">Press '/' to focus search</div>
       </div>
@@ -51,7 +52,11 @@
     <div class="controls-hint">Tip: try keywords like "microgravity", "gene expression" or a year.</div>
     </div>
 
+    <div id="resultsInfo" style="margin:14px 0;color:var(--muted);font-size:14px"></div>
     <div id="cards-container" class="cards-grid" aria-live="polite"></div>
+    <div style="text-align:center;margin-top:18px">
+      <button id="loadMoreBtn" class="btn btn-primary" style="display:none">Load more</button>
+    </div>
   </main>
 
   <div id="sr-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
