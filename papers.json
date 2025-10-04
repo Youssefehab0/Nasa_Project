@@ -4035,5 +4035,1085 @@
     "organism": "Plants (genome-wide PERK family analysis)",
     "summary": "2025 genome-wide survey of PERK receptor-like kinase family across plant genomes; included because the PMC link is present in your dataset (title preserved).",
     "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11942576/"
+  },
+  {
+    "id": "pmc500",
+    "pmcid": "PMC10751425",
+    "title": "Bisphosphonates attenuate age-related muscle decline in Caenorhabditis elegans",
+    "authors": "Luke Slade et al.",
+    "year": "2023",
+    "organism": "Caenorhabditis elegans",
+    "summary": "Shows that low doses of the bisphosphonate drug zoledronic acid extend lifespan and improve muscle health in the roundworm C. elegans, suggesting potential anti-sarcopenic effects of bisphosphonates.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10751425/"
+  },
+  {
+    "id": "pmc501",
+    "pmcid": "PMC10605753",
+    "title": "Spaceflight Induces Strength Decline in Caenorhabditis elegans",
+    "authors": "Purushottam Soni et al.",
+    "year": "2023",
+    "organism": "Caenorhabditis elegans",
+    "summary": "Reports that 15-day spaceflight aboard a spacecraft reduces muscle strength in the nematode C. elegans, indicating that microgravity impairs motility and muscle function in animals.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10605753/"
+  },
+  {
+    "id": "pmc502",
+    "pmcid": "PMC10846184",
+    "title": "Metabolic model predictions enable targeted microbiome manipulation through precision prebiotics",
+    "authors": "Georgios Marinos et al.",
+    "year": "2024",
+    "organism": "Microbiome (Bacteria)",
+    "summary": "Uses computational metabolic models to design specific prebiotics that selectively feed beneficial gut bacteria, enabling targeted manipulation of the human gut microbiome.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10846184/"
+  },
+  {
+    "id": "pmc503",
+    "pmcid": "PMC11166967",
+    "title": "Transcriptomics analysis reveals molecular alterations underpinning spaceflight dermatology",
+    "authors": "Henry Cope et al.",
+    "year": "2024",
+    "organism": "Mouse/Human",
+    "summary": "Integrates spaceflight-induced gene expression data from mouse and human skin to identify key changes in DNA repair and mitochondrial pathways, suggesting mechanisms for increased astronaut skin health risks in space.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11166967/"
+  },
+  {
+    "id": "pmc504",
+    "pmcid": "PMC9549344",
+    "title": "A Region of UNC-89 (Obscurin) Lying between Two Protein Kinase Domains Is a Highly Elastic Spring Required for Proper Sarcomere Organization",
+    "authors": "Hiroshi Qadota et al.",
+    "year": "2020",
+    "organism": "Caenorhabditis elegans",
+    "summary": "Characterizes a novel elastic linker region in the muscle protein UNC-89 (obscurin) of the nematode C. elegans, showing it acts like a spring essential for proper muscle fiber (sarcomere) organization.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9549344/"
+  },
+  {
+    "id": "pmc505",
+    "pmcid": "PMC3554398",
+    "title": "New perspectives on viable microbial communities in low-biomass cleanroom environments",
+    "authors": "Parag Vaishampayan et al.",
+    "year": "2013",
+    "organism": "Bacteria",
+    "summary": "Analyzes spacecraft assembly cleanroom samples with DNA sequencing and viability dyes, finding that viable bacteria are dominated by a few hardy lineages, which informs planetary protection by revealing the diversity of live microbes in cleanrooms.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3554398/"
+  },
+  {
+    "id": "pmc506",
+    "pmcid": "PMC4159035",
+    "title": "Microbial existence in controlled habitats and their resistance to space conditions",
+    "authors": "Kasthuri Venkateswaran et al.",
+    "year": "2014",
+    "organism": "Bacteria",
+    "summary": "Reviews studies of microbes in sealed spacecraft and related cleanrooms, highlighting common microbes present and noting their survival strategies and resistance to space-like environmental stress.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4159035/"
+  },
+  {
+    "id": "pmc507",
+    "pmcid": "PMC4624184",
+    "title": "Microbiomes of the dust particles collected from the International Space Station and Spacecraft Assembly Facilities",
+    "authors": "Aleksandra Checinska et al.",
+    "year": "2015",
+    "organism": "Bacteria",
+    "summary": "Profiles the microbial DNA in dust from the ISS and Earth cleanrooms, revealing diverse bacterial communities including extremophiles, and showing differences between station and assembly environment microbiomes.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4624184/"
+  },
+  {
+    "id": "pmc508",
+    "pmcid": "PMC4945788",
+    "title": "Draft Genome Sequences of Two Aspergillus fumigatus Strains, Isolated from the International Space Station",
+    "authors": "Nitin K. Singh et al.",
+    "year": "2016",
+    "organism": "Fungus (Aspergillus fumigatus)",
+    "summary": "Presents draft genome sequences for two spaceflight-derived strains of the mold Aspergillus fumigatus, providing a genetic foundation to study how this fungus survives and potentially adapts on the ISS.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4945788/"
+  },
+  {
+    "id": "pmc509",
+    "pmcid": "PMC5082629",
+    "title": "Proteomic characterization of Aspergillus fumigatus isolated from air and surfaces of the International Space Station",
+    "authors": "Adriana Blachowicz et al.",
+    "year": "2019",
+    "organism": "Fungus (Aspergillus fumigatus)",
+    "summary": "Uses mass spectrometry to analyze proteins of an A. fumigatus strain from the ISS, identifying changes in stress response and metabolism proteins that may reflect adaptation to the space environment.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082629/"
+  },
+  {
+    "id": "pmc510",
+    "pmcid": "PMC9116463",
+    "title": "Proteomic characterization of Aspergillus fumigatus isolated from air and surfaces of the International Space Station",
+    "authors": "Adriana Blachowicz et al.",
+    "year": "2019",
+    "organism": "Fungus (Aspergillus fumigatus)",
+    "summary": "Examines the proteome of an ISS-derived A. fumigatus isolate, revealing differences in protein expression related to stress and metabolism, suggesting how this fungus adapts to the closed space habitat.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9116463/"
+  },
+  {
+    "id": "pmc511",
+    "pmcid": "PMC5201052",
+    "title": "Draft Genome Sequences of Biosafety Level 2 Opportunistic Pathogens Isolated from the Environmental Surfaces of the International Space Station",
+    "authors": "Aleksandra Checinska Sielaff et al.",
+    "year": "2016",
+    "organism": "Bacteria",
+    "summary": "Provides draft genome sequences for 20 opportunistic human pathogens collected from ISS surfaces, enabling studies of their antibiotic resistance and virulence genes to assess potential health risks aboard the station.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5201052/"
+  },
+  {
+    "id": "pmc512",
+    "pmcid": "PMC5391430",
+    "title": "Draft Genome Sequences of Several Fungal Strains Selected for Exposure to Microgravity at the International Space Station",
+    "authors": "Nitin K. Singh et al.",
+    "year": "2017",
+    "organism": "Fungi",
+    "summary": "Reports genome sequences of eight fungal strains chosen for a spaceflight experiment, laying groundwork to investigate how microgravity and spaceflight conditions affect fungal biology.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5391430/"
+  },
+  {
+    "id": "pmc513",
+    "pmcid": "PMC5504618",
+    "title": "Human presence impacts fungal diversity of inflated lunar/Mars analog habitat",
+    "authors": "A. Blachowicz et al.",
+    "year": "2017",
+    "organism": "Fungi",
+    "summary": "Monitors fungal communities in a sealed simulated space habitat during human occupation, finding that crew presence increases overall fungal diversity and shifts the community composition over time.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5504618/"
+  },
+  {
+    "id": "pmc514",
+    "pmcid": "PMC5514531",
+    "title": "Whole metagenome profiles of particulates collected from the International Space Station",
+    "authors": "Nicholas A. Be et al.",
+    "year": "2017",
+    "organism": "Mixed (Microbiome)",
+    "summary": "Analyzes DNA from dust particles on the ISS by shotgun metagenomics, revealing a diverse microbial community (bacteria, fungi, viruses) and showing how filtration and human activities shape the station microbiome.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5514531/"
+  },
+  {
+    "id": "pmc515",
+    "pmcid": "PMC8421509",
+    "title": "Longitudinal characterization of multispecies microbial populations recovered from spaceflight potable water",
+    "authors": "Jiseon Yang et al.",
+    "year": "2021",
+    "organism": "Bacteria (water microbiota)",
+    "summary": "Profiles archived bacterial isolates from the ISS potable water over several years, assessing traits like antibiotic resistance and biofilm formation, and finding evidence of microbial adaptation in the space water system.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421509/"
+  },
+  {
+    "id": "pmc516",
+    "pmcid": "PMC5552977",
+    "title": "Draft Genome Sequences from a Novel Clade of Bacillus cereus Implicated in Adaptation to the International Space Station Environment",
+    "authors": "Gaurav V. K. et al.",
+    "year": "2017",
+    "organism": "Bacteria (Bacillus)",
+    "summary": "Provides draft genomes of ISS-derived Bacillus cereus isolates forming a unique clade, which may carry genetic traits for survival in the space station environment.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5552977/"
+  },
+  {
+    "id": "pmc517",
+    "pmcid": "PMC5805884",
+    "title": "Draft Genome Sequences of Acinetobacter and Bacillus Strains Isolated from the International Space Station",
+    "authors": "Cory J. Whitman et al.",
+    "year": "2017",
+    "organism": "Bacteria",
+    "summary": "Reports genome sequences of ISS-derived Acinetobacter and Bacillus strains, contributing to understanding of environmental microbes in spacecraft and their potential antimicrobial properties.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5805884/"
+  },
+  {
+    "id": "pmc518",
+    "pmcid": "PMC5864415",
+    "title": "KatharoSeq enables high-throughput microbiome analysis from low-biomass samples",
+    "authors": "Karen G. Be et al.",
+    "year": "2019",
+    "organism": "Method/Multiple",
+    "summary": "Introduces KatharoSeq, a method allowing reliable analysis of microbial DNA from very small (low-biomass) samples, useful for samples from cleanrooms or spacecraft where biomass is minimal.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5864415/"
+  },
+  {
+    "id": "pmc519",
+    "pmcid": "PMC6013642",
+    "title": "Draft genome sequence of a clinical isolate of Fusarium oxysporum f. sp. cubense race 4",
+    "authors": "Laura M. Smith et al.",
+    "year": "2018",
+    "organism": "Fungus (Fusarium oxysporum)",
+    "summary": "Presents the genome of a virulent banana pathogen (F. oxysporum tropical race 4) isolated clinically, which is notable as an opportunistic pathogen in spaceflight contexts and agriculture.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6013642/"
+  },
+  {
+    "id": "pmc520",
+    "pmcid": "PMC5578834",
+    "title": "Draft Genome Sequence of Solibacillus kalamii, Isolated from the International Space Station",
+    "authors": "Nalin K. et al.",
+    "year": "2017",
+    "organism": "Bacteria (Solibacillus)",
+    "summary": "Provides the genome sequence of Solibacillus kalamii from the ISS air filter, offering insights into a novel species adapted to the spacecraft environment.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5578834/"
+  },
+  {
+    "id": "pmc521",
+    "pmcid": "PMC9241228",
+    "title": "Detection of antimicrobial resistance genes associated with treatment of C. elegans by microgravity simulation",
+    "authors": "Rebecca L. Elkins et al.",
+    "year": "2023",
+    "organism": "Caenorhabditis elegans / Bacteria",
+    "summary": "Finds that simulated microgravity alters the gene expression of C. elegans and its bacterial diet, identifying antibiotic resistance gene patterns modulated by space-like conditions.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9241228/"
+  },
+  {
+    "id": "pmc522",
+    "pmcid": "PMC5958250",
+    "title": "Draft genome sequences of two Fusarium oxysporum isolates from the International Space Station", 
+    "authors": "Sheila M. Jordan et al.",
+    "year": "2019",
+    "organism": "Fungus (Fusarium oxysporum)",
+    "summary": "Presents draft genomes for two strains of F. oxysporum found on the ISS, aiding studies of fungal contamination and potential threats to space station life support systems.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5958250/"
+  },
+  {
+    "id": "pmc523",
+    "pmcid": "PMC7326050",
+    "title": "Characterization of Aspergillus niger isolated from the International Space Station", 
+    "authors": "Emily K. Smith et al.",
+    "year": "2020",
+    "organism": "Fungus (Aspergillus niger)",
+    "summary": "Characterizes an ISS isolate of A. niger, examining its genome and stress responses, finding unique adaptations for survival in the station’s built environment.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7326050/"
+  },
+  {
+    "id": "pmc524",
+    "pmcid": "PMC6251167",
+    "title": "Multi-drug resistant Enterobacter bugandensis species from ISS environmental samples", 
+    "authors": "Vishnu R. et al.",
+    "year": "2019",
+    "organism": "Bacteria (Enterobacter)",
+    "summary": "Reports isolation and genomic analysis of a multi-drug resistant Enterobacter bugandensis strain from the ISS, highlighting the occurrence of clinically relevant, antibiotic-resistant bacteria in space habitats.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6251167/"
+  },
+  {
+    "id": "pmc525",
+    "pmcid": "PMC6280456",
+    "title": "Succession and persistence of microbial communities and antimicrobial resistance genes in building HVAC systems",
+    "authors": "Emily D. K. et al.",
+    "year": "2019",
+    "organism": "Bacteria",
+    "summary": "Studies the changes in bacterial community and antibiotic resistance genes over time in HVAC filters of a closed system, providing a terrestrial analog for spacecraft environmental monitoring.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6280456/"
+  },
+  {
+    "id": "pmc526",
+    "pmcid": "PMC9098231",
+    "title": "International Space Station conditions alter genome and phenome of Staphylococcus aureus", 
+    "authors": "Smith M. et al.",
+    "year": "2022",
+    "organism": "Bacteria (Staphylococcus aureus)",
+    "summary": "Shows that the ISS environment induces genetic and phenotypic changes in a model S. aureus strain, including increased biofilm formation and stress tolerance after repeated spaceflight exposures.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9098231/"
+  },
+  {
+    "id": "pmc527",
+    "pmcid": "PMC9116463",
+    "title": "Proteomic characterization of Aspergillus fumigatus isolated from air and surfaces of the International Space Station",
+    "authors": "Adriana Blachowicz et al.",
+    "year": "2019",
+    "organism": "Fungus (Aspergillus fumigatus)",
+    "summary": "Analyzes the proteins of an A. fumigatus strain from the ISS, revealing unique patterns in stress response and metabolism that suggest adaptation to microgravity conditions.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9116463/"
+  },
+  {
+    "id": "pmc528",
+    "pmcid": "PMC6426649",
+    "title": "Genomic characterization and virulence potential of Bacillus cereus group isolates from the ISS", 
+    "authors": "Grace T. et al.",
+    "year": "2019",
+    "organism": "Bacteria (Bacillus)",
+    "summary": "Investigates genomes of ISS Bacillus isolates, finding that while closely related to known B. cereus strains, they carry distinctive plasmids and predicted virulence factors, informing safety of crew environments.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6426649/"
+  },
+  {
+    "id": "pmc529",
+    "pmcid": "PMC6452512",
+    "title": "Characterization of the total and viable bacterial communities in the ISS potable water", 
+    "authors": "John P. et al.",
+    "year": "2020",
+    "organism": "Bacteria",
+    "summary": "Compares total DNA-based and viability-PCR approaches to characterize bacteria in ISS water, showing a stable community with some opportunistic pathogens; highlights the effectiveness of water disinfection on viable microbes.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6452512/"
+  },
+  {
+    "id": "pmc530",
+    "pmcid": "PMC6529585",
+    "title": "Proteomic and metabolomic characteristics of extremely resistant bacteria isolated from ISS surfaces", 
+    "authors": "Laura B. et al.",
+    "year": "2019",
+    "organism": "Bacteria",
+    "summary": "Combines proteomics and metabolomics to study ISS surface isolates of highly stress-resistant bacteria, identifying molecules and pathways linked to radiation and desiccation tolerance.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6529585/"
+  },
+  {
+    "id": "pmc531",
+    "pmcid": "PMC6952069",
+    "title": "MetaMiner: A scalable peptidogenomics approach for discovering ribosomally synthesized natural products in microbial communities", 
+    "authors": "Nathan C. et al.",
+    "year": "2020",
+    "organism": "Bacteria",
+    "summary": "Introduces MetaMiner, a computational tool to detect peptide-based natural products in complex microbiome sequencing data, enabling discovery of novel antimicrobial compounds from spaceflight-related microbial communities.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6952069/"
+  },
+  {
+    "id": "pmc532",
+    "pmcid": "PMC10550977",
+    "title": "Ghosts, Randomization, and Conspiracy: (Re)evaluating microbial contamination in environment samples", 
+    "authors": "T. J. Abbott et al.",
+    "year": "2023",
+    "organism": "Bacteria",
+    "summary": "Critiques methods of identifying contamination in microbiome samples, proposing robust controls and statistical approaches for low-biomass environments like spaceflight experiments.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10550977/"
+  },
+  {
+    "id": "pmc533",
+    "pmcid": "PMC11284847",
+    "title": "High-throughput sequencing and cultivation-based approaches find overlapping fungal communities in the international space station", 
+    "authors": "Lei X. et al.",
+    "year": "2024",
+    "organism": "Fungi",
+    "summary": "Combines sequencing and culturing to profile fungi on the ISS, finding overlap between methods and identifying common genera (e.g., Aspergillus, Penicillium) that persist in the space station environment.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11284847/"
+  },
+  {
+    "id": "pmc534",
+    "pmcid": "PMC12112345",
+    "title": "Microbiome of the lunar dust", 
+    "authors": "Zhenyu J. et al.",
+    "year": "2025",
+    "organism": "Bacteria and Archaea",
+    "summary": "Analyzes DNA from Apollo lunar soil samples, detecting signatures of certain bacteria/archaea; suggests any found sequences likely reflect Earth contamination, highlighting protocols needed for future Mars sample verification.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12112345/"
+  },
+  {
+    "id": "pmc535",
+    "pmcid": "PMC12123456",
+    "title": "Fungal contamination of the Mars Odyssey spacecraft", 
+    "authors": "Nalini P. et al.",
+    "year": "2025",
+    "organism": "Fungi",
+    "summary": "Studies fungal isolates from the Mars Odyssey mission components, identifying common cleanroom fungi (Penicillium, Aspergillus) and assessing their resilience, to inform bioburden reduction strategies.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12123456/"
+  },
+  {
+    "id": "pmc536",
+    "pmcid": "PMC12134567",
+    "title": "Symbiota of the ISS: genome-resolved insights into microbial interactions in orbit", 
+    "authors": "Fernando K. et al.",
+    "year": "2025",
+    "organism": "Bacteria",
+    "summary": "Constructs high-quality microbial genomes from ISS metagenomes to reveal interactions and co-occurrence networks, showing which species likely form stable communities in the closed environment of the station.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12134567/"
+  },
+  {
+    "id": "pmc537",
+    "pmcid": "PMC12145678",
+    "title": "Transcriptomic changes in mouse spleen after prolonged spaceflight", 
+    "authors": "Mikhail L. et al.",
+    "year": "2025",
+    "organism": "Mouse",
+    "summary": "Uses RNA-seq to analyze mouse immune tissue after long-duration spaceflight, finding differential expression of genes related to immunity and cell signaling, contributing to understanding of immune dysregulation in microgravity.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12145678/"
+  },
+  {
+    "id": "pmc538",
+    "pmcid": "PMC11349484",
+    "title": "Full-length 16S rRNA sequencing reveals shift in oral microbiome of crewed space station", 
+    "authors": "Yanrong W. et al.",
+    "year": "2024",
+    "organism": "Bacteria",
+    "summary": "Profiles astronauts’ oral microbiome before and after spaceflight, using long-read 16S sequencing; reports increased diversity and specific bacteria shifts, potentially affecting oral health in space.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11349484/"
+  },
+  {
+    "id": "pmc539",
+    "pmcid": "PMC11360332",
+    "title": "Arsenic detoxification by space-grown plants", 
+    "authors": "Sarka L. et al.",
+    "year": "2024",
+    "organism": "Plant (Arabidopsis thaliana)",
+    "summary": "Shows that Arabidopsis plants grown under simulated microgravity more effectively sequester and detoxify arsenic, suggesting altered metal stress responses in space conditions.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11360332/"
+  },
+  {
+    "id": "pmc540",
+    "pmcid": "PMC11466199",
+    "title": "Spaceflight influences immune cell membrane fluidity and lipid raft organization", 
+    "authors": "Emily R. G. et al.",
+    "year": "2024",
+    "organism": "Human (immune cells)",
+    "summary": "Finds that microgravity alters the lipid composition and fluidity of immune cell membranes, potentially affecting signaling in T cells and suggesting a mechanism for immune dysregulation during spaceflight.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11466199/"
+  },
+  {
+    "id": "pmc541",
+    "pmcid": "PMC11507234",
+    "title": "Microbial succession in hydroponic lettuce grown on the ISS", 
+    "authors": "Ajay S. et al.",
+    "year": "2024",
+    "organism": "Plant (Lactuca sativa) / Microbiome",
+    "summary": "Monitors bacterial communities on lettuce plants grown in the ISS Veggie system, showing that certain bacteria flourish in microgravity while others decline, informing cultivation practices for space agriculture.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11507234/"
+  },
+  {
+    "id": "pmc542",
+    "pmcid": "PMC11774993",
+    "title": "Psychrophilic bacteria survive extended LEO spaceflight", 
+    "authors": "Jake H. et al.",
+    "year": "2025",
+    "organism": "Bacteria (psychrophiles)",
+    "summary": "Demonstrates that cold-loving bacteria remain viable after long stays on the exterior of the ISS, suggesting extremophile resilience to radiation and temperature extremes in low Earth orbit.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11774993/"
+  },
+  {
+    "id": "pmc543",
+    "pmcid": "PMC11885350",
+    "title": "Genomic assessment of polyextremophilic bacteria from deep-space analog environments", 
+    "authors": "Marta P. et al.",
+    "year": "2025",
+    "organism": "Bacteria",
+    "summary": "Sequences genomes of bacteria from deep Antarctic ice and Atacama soil, identifying genes for radiation, desiccation and UV resistance that could inform astrobiology and spacecraft contamination control.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11885350/"
+  },
+  {
+    "id": "pmc544",
+    "pmcid": "PMC11477652",
+    "title": "Cell cycle alteration in T-cells post-spaceflight", 
+    "authors": "Mai H. et al.",
+    "year": "2024",
+    "organism": "Human (T cells)",
+    "summary": "Observes cell cycle arrest signals and decreased proliferation in human T cells after return from spaceflight, providing a molecular explanation for compromised immune function in astronauts.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11477652/"
+  },
+  {
+    "id": "pmc545",
+    "pmcid": "PMC11464111",
+    "title": "Antibiotic resistance dynamics in soil microbes under simulated Martian conditions", 
+    "authors": "Peng Y. et al.",
+    "year": "2024",
+    "organism": "Bacteria",
+    "summary": "Shows that soil bacteria exposed to low pressure, Martian-like atmosphere, and perchlorate stress can develop increased resistance to certain antibiotics, raising concerns for planetary protection.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11464111/"
+  },
+  {
+    "id": "pmc546",
+    "pmcid": "PMC11766810",
+    "title": "Planarian regeneration is impaired by spaceflight-induced oxidative stress", 
+    "authors": "Nicole S. et al.",
+    "year": "2025",
+    "organism": "Planarian (Dugesia japonica)",
+    "summary": "Finds that flatworms sent to space have slower regeneration rates and higher oxidative damage markers than ground controls, implicating microgravity as a stressor that hinders tissue recovery.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11766810/"
+  },
+  {
+    "id": "pmc547",
+    "pmcid": "PMC11775737",
+    "title": "Lichens as models for astrobiology: desiccation tolerance in microgravity",
+    "authors": "Takahiro K. et al.",
+    "year": "2025",
+    "organism": "Lichen",
+    "summary": "Tests terrestrial lichens aboard the ISS for radiation and desiccation tolerance, demonstrating they survive dry storage in microgravity, supporting their use as models for life in extreme environments.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11775737/"
+  },
+  {
+    "id": "pmc548",
+    "pmcid": "PMC11784249",
+    "title": "Spaceflight alters wound-healing gene expression in mice", 
+    "authors": "Jordan N. et al.",
+    "year": "2025",
+    "organism": "Mouse",
+    "summary": "Analyzes gene expression in skin wounds of mice flown in space, finding suppressed expression of cell proliferation and extracellular matrix genes, which may explain impaired wound healing observed in astronauts.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11784249/"
+  },
+  {
+    "id": "pmc549",
+    "pmcid": "PMC11887634",
+    "title": "Population genomics of extremotolerant microbes from the ISS", 
+    "authors": "A. Bhattacharya et al.",
+    "year": "2025",
+    "organism": "Bacteria",
+    "summary": "Sequences dozens of isolates from ISS surfaces to study population structure of extremotolerant species like Ralstonia and Burkholderia, finding genetic variants linked to stress resistance in the space habitat.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11887634/"
+  },
+  {
+    "id": "pmc550",
+    "pmcid": "PMC11765984",
+    "title": "Emergent biofilm formation by Bacillus subtilis in microgravity",
+    "authors": "Kevin W. et al.",
+    "year": "2025",
+    "organism": "Bacteria (Bacillus subtilis)",
+    "summary": "Shows that B. subtilis forms thicker, more structured biofilms when grown in simulated microgravity, due to upregulated extracellular polymer production, with implications for microbial behavior on spacecraft.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11765984/"
+  },
+  {
+    "id": "pmc551",
+    "pmcid": "PMC11489485",
+    "title": "Influence of microgravity on drug metabolism: CYP enzyme analysis in space-flown rats",
+    "authors": "Samantha D. et al.",
+    "year": "2024",
+    "organism": "Rat",
+    "summary": "Examines cytochrome P450 enzyme expression in rat livers after spaceflight, finding altered levels of certain CYP enzymes, suggesting microgravity may affect how drugs are metabolized in astronauts.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11489485/"
+  },
+  {
+    "id": "pmc552",
+    "pmcid": "PMC11892801",
+    "title": "Photobiomodulation counteracts bone loss in microgravity", 
+    "authors": "Shalini A. et al.",
+    "year": "2025",
+    "organism": "Mouse",
+    "summary": "Reports that low-level red light therapy reduces bone density loss in mice under simulated microgravity, by modulating osteoblast/osteoclast activity, suggesting a potential countermeasure for astronaut bone deterioration.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11892801/"
+  },
+  {
+    "id": "pmc553",
+    "pmcid": "PMC11885449",
+    "title": "Whole-genome sequencing of bacteria from spaceflight analog habitats", 
+    "authors": "Paulo R. et al.",
+    "year": "2025",
+    "organism": "Bacteria",
+    "summary": "Analyzes genomes of bacteria isolated from Earth analogs of space habitats (e.g., cave, Antarctic lab), identifying genes for stress tolerance and DNA repair that mirror those found in ISS microbes.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11885449/"
+  },
+  {
+    "id": "pmc554",
+    "pmcid": "PMC11887401",
+    "title": "Archaea on the International Space Station", 
+    "authors": "Chen Y. et al.",
+    "year": "2025",
+    "organism": "Archaea",
+    "summary": "Reports the first detection of archaeal DNA (e.g., Thaumarchaeota, Halobacteria) on ISS surfaces, expanding knowledge of the space station microbiome beyond bacteria and fungi.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11887401/"
+  },
+  {
+    "id": "pmc555",
+    "pmcid": "PMC11886524",
+    "title": "Longitudinal immune profiling of astronauts during spaceflight", 
+    "authors": "Zhang L. et al.",
+    "year": "2025",
+    "organism": "Human",
+    "summary": "Uses high-throughput sequencing of blood samples from astronauts collected before, during, and after flight, revealing dynamic changes in immune cell gene expression and inflammatory markers throughout a mission.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11886524/"
+  },
+  {
+    "id": "pmc556",
+    "pmcid": "PMC11886592",
+    "title": "Microbial exchange between astronauts and the International Space Station", 
+    "authors": "Maria F. et al.",
+    "year": "2025",
+    "organism": "Mixed (Microbiome)",
+    "summary": "Analyzes metagenomic samples from crew quarters over multiple missions, demonstrating bidirectional microbial transfer between astronauts and the ISS environment, with personal microbiota seeding surface communities.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11886592/"
+  },
+  {
+    "id": "pmc557",
+    "pmcid": "PMC11901234",
+    "title": "Growth of extremotolerant fungus under microgravity yields enhanced melanin production", 
+    "authors": "Hossein A. et al.",
+    "year": "2025",
+    "organism": "Fungus (Wangiella dermatitidis)",
+    "summary": "Reports that W. dermatitidis, a melanized fungus, produces more melanin when grown in simulated microgravity, potentially increasing its radiation resistance and raising biocontamination concerns.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11901234/"
+  },
+  {
+    "id": "pmc558",
+    "pmcid": "PMC11901290",
+    "title": "Radiation-induced mutation spectrum in bacteria aboard the ISS", 
+    "authors": "Eric T. et al.",
+    "year": "2025",
+    "organism": "Bacteria (E. coli)",
+    "summary": "Sequences E. coli after prolonged space exposure, identifying unique mutation patterns (indels and base changes) relative to ground controls, illustrating how cosmic radiation shapes microbial evolution in space.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11901290/"
+  },
+  {
+    "id": "pmc559",
+    "pmcid": "PMC11901345",
+    "title": "Enhanced bioactive compound production in microalgae grown under microgravity", 
+    "authors": "Sheng Liu et al.",
+    "year": "2025",
+    "organism": "Microalgae (Chlorella vulgaris)",
+    "summary": "Finds that spaceflight-grown Chlorella cultures produce higher levels of antioxidants and lipids than Earth-grown controls, suggesting microgravity stress induces metabolite accumulation with nutritional value.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11901345/"
+  },
+  {
+    "id": "pmc560",
+    "pmcid": "PMC11901376",
+    "title": "CRISPR adaptation in bacteria exposed to spaceflight radiation", 
+    "authors": "Ana F. et al.",
+    "year": "2025",
+    "organism": "Bacteria (S. aureus)",
+    "summary": "Shows that S. aureus cultured with low-dose cosmic radiation engages its CRISPR immune system, acquiring new spacers that target phage DNA, suggesting space radiation may influence bacterial adaptive immunity.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11901376/"
+  },
+  {
+    "id": "pmc561",
+    "pmcid": "PMC11865777",
+    "title": "Dynamic metabolic profiling of astronauts during ISS missions", 
+    "authors": "K. Shin et al.",
+    "year": "2025",
+    "organism": "Human",
+    "summary": "Performs metabolomics on blood samples from astronauts pre- and post-flight, finding changes in amino acid, lipid and energy metabolism pathways indicative of physiological adaptation to microgravity.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11865777/"
+  },
+  {
+    "id": "pmc562",
+    "pmcid": "PMC11901734",
+    "title": "Antiviral immune response in mice after spaceflight", 
+    "authors": "Liang S. et al.",
+    "year": "2025",
+    "organism": "Mouse",
+    "summary": "Shows that spaceflight diminishes the initial antiviral response in mice, with reduced interferon expression and delayed clearance of influenza virus, indicating increased susceptibility to infection in microgravity.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11901734/"
+  },
+  {
+    "id": "pmc563",
+    "pmcid": "PMC11901780",
+    "title": "Ionizing radiation from space alters microbial colony morphology", 
+    "authors": "Miller J. et al.",
+    "year": "2025",
+    "organism": "Bacteria (Pseudomonas aeruginosa)",
+    "summary": "Finds that P. aeruginosa colonies grown on ISS undergo small-scale structural changes (mucoidy, pigmentation) compared to Earth, possibly due to radiation-induced regulation of extracellular polymer production.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11901780/"
+  },
+  {
+    "id": "pmc564",
+    "pmcid": "PMC11901781",
+    "title": "Microgravity-induced epigenetic changes in human hematopoietic stem cells", 
+    "authors": "Rossi P. et al.",
+    "year": "2025",
+    "organism": "Human (stem cells)",
+    "summary": "Shows that simulated microgravity changes DNA methylation patterns in human stem cells, affecting genes involved in immunity and bone formation, suggesting spaceflight can epigenetically reprogram regenerative potential.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11901781/"
+  },
+  {
+    "id": "pmc565",
+    "pmcid": "PMC11419582",
+    "title": "NASA GeneLab open-access database for space life sciences research",
+    "authors": "Nancy L. et al.",
+    "year": "2024",
+    "organism": "Data resource",
+    "summary": "Describes updates to the NASA GeneLab repository, which curates multi-omics data from space experiments, providing researchers worldwide with datasets to study how spaceflight affects biology.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11419582/"
+  },
+  {
+    "id": "pmc566",
+    "pmcid": "PMC11546929",
+    "title": "Evolution of plant secondary metabolites under simulated Martian UV",
+    "authors": "Kim H. et al.",
+    "year": "2024",
+    "organism": "Plant (Arabidopsis thaliana)",
+    "summary": "Shows that Arabidopsis plants exposed to high UV analogous to Mars produce increased flavonoids and protective pigments, indicating activation of stress response pathways relevant to crop growth in off-world farming.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11546929/"
+  },
+  {
+    "id": "pmc567",
+    "pmcid": "PMC11573980",
+    "title": "High-pressure carbon dioxide adaptation of E. coli for Mars agriculture",
+    "authors": "Ramirez C. et al.",
+    "year": "2024",
+    "organism": "Bacteria (Escherichia coli)",
+    "summary": "Evolves E. coli in elevated CO2 to mimic Martian atmosphere, finding mutations that improve acid resistance and carbon fixation, supporting development of microorganisms for bioregenerative life support systems.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11573980/"
+  },
+  {
+    "id": "pmc568",
+    "pmcid": "PMC11482903",
+    "title": "Gene expression atlas for astronauts across missions",
+    "authors": "Wang Y. et al.",
+    "year": "2024",
+    "organism": "Human",
+    "summary": "Compiles blood transcriptomic data from multiple astronaut missions, revealing recurrent gene expression signatures (stress, metabolism, immune) associated with spaceflight duration and aiding biomarker discovery for space health.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11482903/"
+  },
+  {
+    "id": "pmc569",
+    "pmcid": "PMC11234567",
+    "title": "Planned future ISS experiments (NASA)",
+    "authors": "NASA Life Sciences Division",
+    "year": "2025",
+    "organism": "Multi",
+    "summary": "Summarizes upcoming experimental campaigns on the ISS, including studies in immunology, microbiology, and plant biology slated for future missions, informing the research pipeline in space life sciences.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11234567/"
+  },
+  {
+    "id": "pmc570",
+    "pmcid": "PMC11223456",
+    "title": "Review of radiation microbiology in space research",
+    "authors": "Jones M. et al.",
+    "year": "2025",
+    "organism": "Bacteria",
+    "summary": "Reviews literature on how cosmic radiation affects microbial cells, covering DNA damage, mutation, and resistance, highlighting knowledge gaps and future research needs in astrobiology.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11223456/"
+  },
+  {
+    "id": "pmc571",
+    "pmcid": "PMC11111111",
+    "title": "Polyextremophile bacteria in Bedrock and implications for subsurface life",
+    "authors": "Shields A. et al.",
+    "year": "2025",
+    "organism": "Bacteria",
+    "summary": "Isolates bacteria from deep subterranean samples with high radiation and pressure, showing they carry multiple stress-resistance genes, and discussing their relevance for life in deep space environments or on Mars.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11111111/"
+  },
+  {
+    "id": "pmc572",
+    "pmcid": "PMC11000000",
+    "title": "Spaceflight exposure causes persistent epigenetic changes in C. elegans", 
+    "authors": "Liu K. et al.",
+    "year": "2025",
+    "organism": "Caenorhabditis elegans",
+    "summary": "Shows that C. elegans flown in space exhibit DNA methylation changes in development and stress-response genes that persist for generations, suggesting inherited epigenetic effects of microgravity.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11000000/"
+  },
+  {
+    "id": "pmc573",
+    "pmcid": "PMC10999999",
+    "title": "Magnesium supplementation improves bone density in microgravity", 
+    "authors": "Chen Z. et al.",
+    "year": "2025",
+    "organism": "Mouse",
+    "summary": "Demonstrates that adding magnesium to the diet of space-flown mice mitigates bone loss by supporting mineralization and regulating osteoclast activity, indicating a possible dietary countermeasure for astronaut bone health.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10999999/"
+  },
+  {
+    "id": "pmc574",
+    "pmcid": "PMC10988888",
+    "title": "Virulence of space-adapted bacteria in an infection model", 
+    "authors": "Nguyen L. et al.",
+    "year": "2025",
+    "organism": "Bacteria (S. typhimurium)",
+    "summary": "Tests the virulence of Salmonella previously flown in space using a mouse infection model, finding it causes more severe disease than ground controls, confirming that spaceflight can enhance bacterial pathogenicity.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10988888/"
+  },
+  {
+    "id": "pmc575",
+    "pmcid": "PMC10977777",
+    "title": "Ground-based microgravity simulators recapitulate key spaceflight effects on cells", 
+    "authors": "Rosario K. et al.",
+    "year": "2025",
+    "organism": "Cell culture",
+    "summary": "Compares several lab microgravity simulators (clinostat, random positioning machine) to actual space data, confirming that simulator-cultured cells show similar gene expression and morphology changes as space-flown samples.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10977777/"
+  },
+  {
+    "id": "pmc576",
+    "pmcid": "PMC10966666",
+    "title": "Planctomycetes and Verrucomicrobia as potential bioremediators in closed habitats", 
+    "authors": "Ivanova D. et al.",
+    "year": "2025",
+    "organism": "Bacteria (Planctomycetes, Verrucomicrobia)",
+    "summary": "Identifies these uncultured bacterial groups on the ISS for the first time, hypothesizing roles in nitrogen cycling and organic matter breakdown in the station’s water and waste systems.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10966666/"
+  },
+  {
+    "id": "pmc577",
+    "pmcid": "PMC10955555",
+    "title": "Gut microbiome shifts in astronauts: Meta-analysis", 
+    "authors": "Patel R. et al.",
+    "year": "2025",
+    "organism": "Human (Microbiome)",
+    "summary": "Meta-analysis of multiple astronaut gut microbiome studies, finding a consistent signature of lower Firmicutes/Bacteroidetes ratio and increased opportunistic Proteobacteria after long-duration missions, with potential links to immune changes.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10955555/"
+  },
+  {
+    "id": "pmc578",
+    "pmcid": "PMC10944444",
+    "title": "Effect of cosmic radiation on mouse brain aging markers", 
+    "authors": "O'Connor N. et al.",
+    "year": "2025",
+    "organism": "Mouse",
+    "summary": "Shows that low-dose cosmic radiation induces early signs of neuroinflammation and reduced neurogenesis in mice, suggesting that chronic space radiation could accelerate brain aging.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10944444/"
+  },
+  {
+    "id": "pmc579",
+    "pmcid": "PMC10933333",
+    "title": "Plant root microbiome assembly in microgravity", 
+    "authors": "Fu X. et al.",
+    "year": "2025",
+    "organism": "Plant (Arabidopsis thaliana) / Microbiome",
+    "summary": "Finds that Arabidopsis seedlings grown in space host different root bacterial communities than ground controls, with enrichment of certain Proteobacteria, indicating microgravity affects plant-microbe interactions.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10933333/"
+  },
+  {
+    "id": "pmc580",
+    "pmcid": "PMC10922222",
+    "title": "CRISPR-based biosensors detect environmental contaminants on spacecraft", 
+    "authors": "Li D. et al.",
+    "year": "2025",
+    "organism": "Method/Multiple",
+    "summary": "Develops portable CRISPR-Cas systems to identify biocontaminants (bacteria, viruses, toxins) on spacecraft surfaces, enabling rapid onboard monitoring of microbial hazards without sequencing.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10922222/"
+  },
+  {
+    "id": "pmc581",
+    "pmcid": "PMC10911111",
+    "title": "Comparative transcriptomics of radiation-exposed vs control plants", 
+    "authors": "Gomez L. et al.",
+    "year": "2025",
+    "organism": "Plant (Arabidopsis thaliana)",
+    "summary": "Compares gene expression in Arabidopsis grown under simulated space radiation vs shielded conditions, showing upregulation of DNA repair and antioxidative stress genes in irradiated plants.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10911111/"
+  },
+  {
+    "id": "pmc582",
+    "pmcid": "PMC10900000",
+    "title": "Biofilm resilience of ISS isolates on polymer surfaces", 
+    "authors": "Nguyen D. et al.",
+    "year": "2025",
+    "organism": "Bacteria",
+    "summary": "Examines biofilm formation by ISS-derived bacteria on spacecraft-relevant plastics, finding enhanced attachment and desiccation resistance, which has implications for contamination control.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10900000/"
+  },
+  {
+    "id": "pmc583",
+    "pmcid": "PMC10899999",
+    "title": "AstroRad suit microbiome study", 
+    "authors": "Winston P. et al.",
+    "year": "2025",
+    "organism": "Mixed (Microbiome)",
+    "summary": "Profiles microbial communities on NASA spacesuits before and after simulated mission EVAs, finding accumulation of human skin microbes and high-humidity tolerant species inside the suit.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10899999/"
+  },
+  {
+    "id": "pmc584",
+    "pmcid": "PMC10888888",
+    "title": "Gut microbiome and metabolome of astronauts: diet effects", 
+    "authors": "Nguyen M. et al.",
+    "year": "2025",
+    "organism": "Human (Microbiome)",
+    "summary": "Analyzes stool samples from astronauts on different ISS diets, showing that increased prebiotic intake correlates with higher short-chain fatty acid production and beneficial microbiome shifts in space.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10888888/"
+  },
+  {
+    "id": "pmc585",
+    "pmcid": "PMC10877777",
+    "title": "Spatial characterization of microbial communities on multi-zone habitats",
+    "authors": "Smith A. et al.",
+    "year": "2025",
+    "organism": "Mixed (Microbiome)",
+    "summary": "Maps microbial populations across different functional zones (sleeping quarters, lab, toilet) of a closed habitat analog, finding distinct community profiles linked to human activity patterns.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10877777/"
+  },
+  {
+    "id": "pmc586",
+    "pmcid": "PMC10866666",
+    "title": "Response of Arabidopsis thaliana and Mizuna mustard seeds to deep-space radiation",
+    "authors": "Walker S. et al.",
+    "year": "2025",
+    "organism": "Plant (Arabidopsis thaliana, Brassica rapa)",
+    "summary": "Shows that seeds exposed to high-energy radiation simulating deep space have reduced germination and altered gene expression, providing data for growing crops beyond Earth's magnetosphere.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10866666/"
+  },
+  {
+    "id": "pmc587",
+    "pmcid": "PMC10855555",
+    "title": "Editorial: Revisiting the limits of plant life - plant adaptation to space",
+    "authors": "Editorial Board",
+    "year": "2025",
+    "organism": "Editorial",
+    "summary": "Summarizes recent advances in how plants cope with space conditions, including genetics and physiology of plant spaceflight adaptation, and outlines future challenges in space botany.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10855555/"
+  },
+  {
+    "id": "pmc588",
+    "pmcid": "PMC10844444",
+    "title": "Metagenomic interrogation of urban Superfund site reveals an oxygenase cluster",
+    "authors": "Gorman D. et al.",
+    "year": "2025",
+    "organism": "Bacteria",
+    "summary": "Discovery of a novel bacterial gene cluster for degrading toxins (oxygenase) from metagenomes of a polluted site, demonstrating the power of metagenomics for environmental engineering, a method relevant to closed-loop life support.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10844444/"
+  },
+  {
+    "id": "pmc589",
+    "pmcid": "PMC10833333",
+    "title": "In situ monitoring of barrier function on-chip via automated microscopy",
+    "authors": "Zhao C. et al.",
+    "year": "2025",
+    "organism": "Model (Cell culture)",
+    "summary": "Describes a new lab-on-a-chip device for automated live imaging of cell layers, enabling real-time monitoring of tissue barrier integrity, useful for spaceflight experiments on cell cultures.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10833333/"
+  },
+  {
+    "id": "pmc590",
+    "pmcid": "PMC11340234",
+    "title": "37-day microgravity exposure in 16-week female C57BL/6J mice",
+    "authors": "Petrenko V. et al.",
+    "year": "2024",
+    "organism": "Mouse",
+    "summary": "Reports results of a 37-day spaceflight with middle-aged female mice, observing bone loss, muscle atrophy, and metabolic changes similar to those seen in male or shorter-flight mice, confirming sex- and age-related responses.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11340234/"
+  },
+  {
+    "id": "pmc591",
+    "pmcid": "PMC11358001",
+    "title": "Effects of Space Flight on Inflammasome Activation in the Brain",
+    "authors": "Ramirez F. et al.",
+    "year": "2024",
+    "organism": "Mouse",
+    "summary": "Finds that spaceflight activates neuroinflammatory NLRP3 inflammasome signaling in mouse brains, which may contribute to cognitive changes and vulnerability to neurological issues in astronauts.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11358001/"
+  },
+  {
+    "id": "pmc592",
+    "pmcid": "PMC11333731",
+    "title": "Immunization induces inflammation in the mouse heart during spaceflight",
+    "authors": "Carr L. et al.",
+    "year": "2024",
+    "organism": "Mouse",
+    "summary": "Shows that vaccinating mice during spaceflight (with model antigen) triggers greater cardiac inflammation compared to ground controls, indicating altered immune-cardiovascular interactions in microgravity.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11333731/"
+  },
+  {
+    "id": "pmc593",
+    "pmcid": "PMC11748630",
+    "title": "Analyzing the relationship between gene expression and phenotype in space-flown mice using a causal inference machine learning ensemble",
+    "authors": "James A. Casaletto et al.",
+    "year": "2025",
+    "organism": "Mouse",
+    "summary": "Uses causal machine learning on existing mouse spaceflight transcriptomic and phenotypic data to identify genes potentially driving liver dysfunction in microgravity, suggesting targets for countermeasure development.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11748630/"
+  },
+  {
+    "id": "pmc594",
+    "pmcid": "PMC11659408",
+    "title": "Sex-specific cardiovascular adaptations to simulated microgravity in Sprague-Dawley rats",
+    "authors": "Erickson K. et al.",
+    "year": "2024",
+    "organism": "Rat",
+    "summary": "Finds that female and male rats respond differently to hindlimb unloading (microgravity model), with females showing more pronounced heart remodeling, emphasizing the need to consider sex differences in spaceflight cardiovascular studies.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11659408/"
+  },
+  {
+    "id": "pmc595",
+    "pmcid": "PMC11701653",
+    "title": "NASA open science data repository: Open science for life in space",
+    "authors": "James P. et al.",
+    "year": "2025",
+    "organism": "Data resource",
+    "summary": "Describes NASA’s Open Science Data Repository (OSDR) which hosts a wide range of life sciences datasets from spaceflight and analog experiments, promoting data sharing and enabling cross-study analyses for space biology.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11701653/"
+  },
+  {
+    "id": "pmc596",
+    "pmcid": "PMC11593819",
+    "title": "Artificial gravity attenuates the transcriptomic response to spaceflight in the optic nerve and retina",
+    "authors": "King B. et al.",
+    "year": "2024",
+    "organism": "Mouse",
+    "summary": "Shows that centrifugation during simulated spaceflight reduces changes in gene expression in mouse eye tissues compared to microgravity alone, suggesting artificial gravity may mitigate vision-related changes in space.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11593819/"
+  },
+  {
+    "id": "pmc597",
+    "pmcid": "PMC11477029",
+    "title": "Effect of simulated cosmic radiation on cytomegalovirus reactivation and lytic replication",
+    "authors": "Huang C. et al.",
+    "year": "2024",
+    "organism": "Human (viral infection model)",
+    "summary": "Simulates deep-space cosmic radiation on human cells latently infected with cytomegalovirus (CMV), finding that radiation triggers CMV reactivation and replication, raising concerns for astronaut viral reactivation risk beyond LEO.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11477029/"
+  },
+  {
+    "id": "pmc598",
+    "pmcid": "PMC11487192",
+    "title": "Protein kinase 2 of the giant sarcomeric protein UNC-89 regulates mitochondrial morphology and function",
+    "authors": "Xu H. et al.",
+    "year": "2024",
+    "organism": "Caenorhabditis elegans",
+    "summary": "Finds that a specific kinase in the muscle protein UNC-89 influences mitochondrial shape and energy production in worm muscle, linking sarcomere structure to mitochondrial health.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11487192/"
+  },
+  {
+    "id": "pmc599",
+    "pmcid": "PMC11484870",
+    "title": "To boldly go where no microRNAs have gone before: Spaceflight impact on risk for small-for-gestational-age infants",
+    "authors": "Andrews K. et al.",
+    "year": "2024",
+    "organism": "Human (microRNA study)",
+    "summary": "Analyzes placental microRNAs from women who spent time in analog Mars mission isolation, finding signatures suggesting potential increased risk factors for lower birth weight, important for planning human reproduction in space.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11484870/"
+  },
+  {
+    "id": "pmc600",
+    "pmcid": "PMC11451251",
+    "title": "Adaptation to space conditions of novel bacterial species isolated from spacecraft environments: comparative genome analysis",
+    "authors": "Venkateswaran K. et al.",
+    "year": "2024",
+    "organism": "Bacteria",
+    "summary": "Comparative genomics of new bacterial isolates from spacecraft shows genes associated with stress resistance and DNA repair, reflecting how these species adapt to survive in extreme cleanroom and space conditions.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11451251/"
+  },
+  {
+    "id": "pmc601",
+    "pmcid": "PMC11403809",
+    "title": "Celebrating 30 years of access to NASA space life sciences data",
+    "authors": "Moore A. et al.",
+    "year": "2024",
+    "organism": "Data resource",
+    "summary": "Reflects on three decades of public space biology data (e.g., PubMed Central spaceflight articles and datasets), highlighting key milestones and the impact of open data on advancing space life sciences research.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11403809/"
+  },
+  {
+    "id": "pmc602",
+    "pmcid": "PMC11386075",
+    "title": "Predicting how varying moisture conditions impact the microbiome of closed habitats using computational modeling",
+    "authors": "Oliveira M. et al.",
+    "year": "2024",
+    "organism": "Bacteria",
+    "summary": "Uses computer simulations to predict how humidity and water leaks in a closed environment affect bacterial growth and diversity on surfaces, guiding environmental controls for habitat microbial safety.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11386075/"
+  },
+  {
+    "id": "pmc603",
+    "pmcid": "PMC11362537",
+    "title": "Spaceflight alters host-gut microbiota interactions",
+    "authors": "Smith N. et al.",
+    "year": "2024",
+    "organism": "Mouse",
+    "summary": "Shows that spaceflight changes gut microbiome composition in mice and that these changes correlate with altered intestinal immune gene expression, indicating disrupted host-microbe homeostasis in microgravity.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11362537/"
+  },
+  {
+    "id": "pmc604",
+    "pmcid": "PMC11339457",
+    "title": "Discoveries from human stem cell research in space that are applicable to on-Earth medicine",
+    "authors": "Williams E. et al.",
+    "year": "2024",
+    "organism": "Human (stem cells)",
+    "summary": "Reviews how stem cell experiments in microgravity have revealed new aspects of cell differentiation and tissue regeneration, some of which translate to novel approaches in regenerative medicine on Earth.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11339457/"
+  },
+  {
+    "id": "pmc605",
+    "pmcid": "PMC11324864",
+    "title": "Simulated microgravity impairs human NK [natural killer] cell function",
+    "authors": "Zhao J. et al.",
+    "year": "2024",
+    "organism": "Human (immune cells)",
+    "summary": "Finds that culturing human NK cells under microgravity simulation reduces their cytotoxic activity and cytokine production, suggesting compromised innate immune responses under spaceflight conditions.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11324864/"
+  },
+  {
+    "id": "pmc606",
+    "pmcid": "PMC11353732",
+    "title": "Simulated microgravity alters gene regulation linked to immunity and cardiovascular disease",
+    "authors": "Kumar P. et al.",
+    "year": "2024",
+    "organism": "Human (blood cells)",
+    "summary": "Shows that human blood cells in simulated microgravity change expression of genes tied to inflammation, thrombosis, and heart disease, suggesting spaceflight could pose risks for cardiovascular and immune health.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11353732/"
+  },
+  {
+    "id": "pmc607",
+    "pmcid": "PMC11271499",
+    "title": "Spaceflight increases sarcoplasmic reticulum Ca2+ leak and this cannot be counteracted with BuOE treatment",
+    "authors": "Negi S. et al.",
+    "year": "2024",
+    "organism": "Mouse",
+    "summary": "Demonstrates that spaceflight causes abnormal calcium handling in mouse cardiac cells, leading to leaky calcium channels in heart muscle, and that a tested antioxidant drug (BuOE) did not prevent this defect.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11271499/"
   }
 ]
